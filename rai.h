@@ -11,7 +11,7 @@ public:
 
   RAIObj(RAIObj<Func>&& r) : onScopeExit(r.onScopeExit)
   {
-    // the can't do nothing for reset const ref. so just mark move flag
+    // we can't do nothing to reset const ref. so just mark move flag
     r.moved = true;
   }
 
